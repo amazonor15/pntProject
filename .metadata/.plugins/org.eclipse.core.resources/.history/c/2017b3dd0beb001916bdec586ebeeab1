@@ -1,0 +1,109 @@
+import java.util.Scanner;
+
+public class Redoing {
+
+	
+	
+	
+	
+	// Variables Declarations 
+	
+     //static  String nameOfBusiness; //vari 1 
+     static  String nameOfcustomer; //vari 2
+     static String nameOfProduct;// vari 3
+     static double quantityOfProduct; // vari 4
+     static double priceOfProduct; // vari 5
+     static double grossPay; //vari 6
+     static double netPay; //vari 7
+     
+     
+     public static void welcomeCeneter() {
+    	 
+    	 System.out.println("Orange Juice Factory");
+    	 System.out.println("");
+    	 System.out.println("445 Apple Street");
+    	 System.out.println("Brooklyn NY 11218");
+    	 System.out.println("      ******");
+    	 System.out.println("");
+    	 
+    	 System.out.println("");
+    	 
+     }
+     
+     public static void allName() {
+    	 
+    	 
+    	Scanner scan1 = new Scanner (System.in);
+    	
+    	 System.out.println("Please Enter Your Name:");
+    	nameOfcustomer = scan1.nextLine();
+    	
+    	
+
+   	 System.out.println("Please Product Name:");
+    	 
+   	nameOfProduct = scan1.nextLine();
+   	
+   	
+	System.out.println("Please Product Quantity:");
+   	
+	quantityOfProduct = scan1.nextDouble();
+   	
+   	
+   	
+   	System.out.println("Please Product Price:");
+   	
+   	priceOfProduct = scan1.nextDouble();
+   	
+   	
+    	 
+     }
+
+     
+     public static void Gpay() {
+    	 
+    	 grossPay = quantityOfProduct * priceOfProduct;
+    	 
+    	 
+    	 if(grossPay>0 && grossPay<=100)
+    	 { netPay = grossPay - 5; }
+    	 
+    	 
+     }
+     
+
+     
+     public static void DisplayOP() {
+    	 
+    	 //System.out.println("Orange Juice Factory" + nameOfBusiness);
+    	 System.out.println("--------------------------------------------");
+    	 System.out.println("Your Name: " + nameOfcustomer);
+    	 System.out.println("Product Name: " + nameOfProduct);
+    	 System.out.println("Quantity of Product: " + quantityOfProduct);
+    	 System.out.println("Product Price: " + priceOfProduct);
+    	 //System.out.println("Product Name: " + nameOfProduct);
+    	 
+    	 System.out.println("Gross Amount: " + grossPay);
+    	 System.out.println("--------------------------------------------");
+    	 System.out.println("Net Pay: " + netPay);
+    	 
+    	 System.out.println("");
+    	 
+    	 
+    	 
+     }
+	public static void main(String[] args) {
+		
+		
+		welcomeCeneter();
+		
+		allName();
+		Gpay();
+		DisplayOP();
+	
+
+		
+		
+	}	
+		
+}

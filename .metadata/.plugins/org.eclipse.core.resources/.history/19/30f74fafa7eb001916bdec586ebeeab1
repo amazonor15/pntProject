@@ -1,0 +1,53 @@
+
+public class multipleProdcuts {
+
+	
+	static  String nameOfcustomer; 
+	
+    static String nameOfProducts;
+    
+    static double quantityOfProduct; 
+    
+    static double priceOfProduct; 
+    
+    static double tax;
+    
+    static double grossPay;
+    
+    static double  discount;
+ 
+    static double netPay; 
+	
+	
+	
+    
+    public static void welcome() {
+    	
+    	System.out.println ("Welcome to Forest.com");
+    	
+    	System.out.println ("123 Abcde Street");
+    	System.out.println ("Brooklyn NY 10301");
+    	System.out.println ("");
+    	System.out.println ("        ***");
+    	
+    }
+    
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		welcome();
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

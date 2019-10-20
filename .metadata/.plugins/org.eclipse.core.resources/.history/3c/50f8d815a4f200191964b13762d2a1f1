@@ -1,0 +1,31 @@
+package ConstructorDemo;
+
+
+
+public class DemoConstructor {
+
+	
+	
+	
+	
+	
+	public DemoConstructor () {  //default constructor 
+		System.out.println("Hello");
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+
+		DemoConstructor shahid = new DemoConstructor (); // Parameterized 
+		DemoConstructor ali = new DemoConstructor(String name ); // Parameterized 
+		DemoConstructor ahmed = new DemoConstructor(String name, collage name );
+		DemoConstructor moh = new DemoConstructor(String name, collage name, your id );
+		
+	}
+
+}

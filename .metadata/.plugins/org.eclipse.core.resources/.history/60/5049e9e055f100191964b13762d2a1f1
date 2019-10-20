@@ -1,0 +1,226 @@
+package Canculator;
+ import java.util.Scanner;
+
+public class FirstProject {
+
+	
+	
+	
+	
+	// Variables Declarations 
+	
+     //static  String nameOfBusiness; //vari 1 
+     static  String nameOfcustomer; //vari 2
+     static String nameOfProduct;// vari 3
+     static double quantityOfProduct; // vari 4
+     static double priceOfProduct; // vari 5
+     static double grossPay; //vari 6
+     static double netPay; //vari 7
+   
+     
+     public static void welcomeCeneter(String Greting) {
+    	 
+    	 System.out.println("Orange Juice Factory");
+    	 System.out.println("");
+    	 System.out.println("445 Apple Street");
+    	 System.out.println("Brooklyn NY 11218");
+    	 System.out.println("      ******");
+    	 System.out.println("");
+    	 
+    	 System.out.println("");
+    	 
+     }
+     
+     
+     public FirstProject(int HowMany, String Greeting) {
+    	 
+    	 welcomeCeneter(Greeting);
+    	 for(int i=0; i<HowMany; i++) {
+    		 input();
+        	 calulateAmount();
+        	 DisplayOP();
+ 		}
+    	 
+    	 
+    	 Exit ();
+    	 
+    	 
+    	 
+    	 
+    	 
+     }
+     
+      public static void input() {
+    	 
+    	 
+    	Scanner scan1 = new Scanner (System.in);
+    	
+    	 System.out.println("Please Enter Your Name:");
+    	nameOfcustomer = scan1.nextLine();
+    	
+    	
+
+   	 System.out.println("Please Enter Product Name:");
+    	 
+   	nameOfProduct = scan1.nextLine();
+   	
+   	
+   	boolean ContinueToNext;
+   	
+   	do {
+   		
+   		try {
+   			Scanner scan2 = new Scanner (System.in);
+   			System.out.println("Please Enter Product Quantity:");
+   	   	   	
+   	   		quantityOfProduct = scan2.nextDouble();
+   	   	   	
+   	   		if (quantityOfProduct>=0 && quantityOfProduct<=80) {
+   	   			ContinueToNext= true;
+   	   		}
+   	   		else {
+   	   			System.out.println("Please enter between 0-80");
+   	   			ContinueToNext= false;
+   	   		}
+   	   		
+   		}catch (Exception e) {
+   			System.out.println("Error! Enter 0-80!");
+   			ContinueToNext=false;
+   		}
+   		
+   		
+   	} while (!ContinueToNext);
+	
+   	
+	
+	
+   	do {
+   		
+   		try {
+   			Scanner scan2 = new Scanner (System.in);
+   			System.out.println("Please Enter Product Price:");
+   	   	   	
+   	   	   	priceOfProduct = scan2.nextDouble();
+   	   	   	if (priceOfProduct>=0 && priceOfProduct<=80 ) {
+   	   	   	ContinueToNext= true;
+   	   	   	}
+   	   	   	else {
+   	   	   		System.out.println("Please enter betweem 0-80");
+   	   	   	ContinueToNext=false;
+   	   	   	}
+   		}catch (Exception e){
+   			System.out.println("Error! Enter 0-80!");
+   			ContinueToNext=false;
+   		}
+   		
+   	   	
+   	} while (!ContinueToNext);
+   	
+   	
+   	
+    	 
+     }
+
+     public static void calulateAmount() {
+    	 Gpay();
+    	 netPay ();
+    	 
+    	 
+    	 
+     }
+     
+     public static void Gpay() {
+    	 
+    	 grossPay = quantityOfProduct * priceOfProduct;
+    	 
+    	
+    	 
+     }
+     
+     public static void netPay() {
+ 		
+		 
+       	 if(grossPay>0 && grossPay<=100)
+       	 { netPay = grossPay - 2;} 
+       	 
+       	 else if (grossPay>100 && grossPay<=500)
+       	{ netPay = grossPay - 10;} 
+     
+       	 else if (grossPay>500 && grossPay<=1000)
+       	{ netPay = grossPay - 20;} 
+     
+       	
+       	else if   (grossPay>1000)
+   		{netPay =grossPay -25;}
+       	 
+       	else
+       	{netPay = 0; System.out.println("Invalid input");}
+       	
+       	 
+       	 
+       	}
+      	
+     public static void Exit () {
+    	 
+    	 System.out.println("");
+    	 System.out.println("Thank you for shopping with us today!!!");
+    	 
+    	 
+     }
+      
+     public static void DisplayOP() {
+    	 
+    	 //System.out.println("Orange Juice Factory" + nameOfBusiness);
+    	 System.out.println("--------------------------------------------");
+    	 System.out.println("Your Name: " + nameOfcustomer);
+    	 System.out.println("Product Name: " + nameOfProduct);
+    	 System.out.println("Quantity of Product: " + quantityOfProduct);
+    	 System.out.println("Product Price: " + priceOfProduct);
+    	 //System.out.println("Product Name: " + nameOfProduct);
+    	 
+    	 System.out.println("Gross Amount: " + grossPay);
+    	 System.out.println("Discount : " + (grossPay - netPay));
+    	 System.out.println("--------------------------------------------");
+    	 System.out.println("Net Pay: " + netPay);
+    	 
+    	 System.out.println("");
+    	 
+    	 
+    	 
+     }
+     
+     public static boolean DoYouWantToContinue() {
+    	 
+    	 String DoYouWantContinue;
+ 		Scanner contin= new Scanner (System.in);
+ 		
+ 		System.out.println("Do You Want To Continue ? Type Yes or No");
+ 		DoYouWantContinue= contin.nextLine();
+ 		
+ 		
+ 		if (DoYouWantContinue.contentEquals("yes")) {
+ 		 return true;
+ 		 
+ 		
+ 		}
+    	 
+    	 return false;
+     }
+         
+     public static void startCalculator() {
+    	 welcomeCeneter();
+    	 for(int i=0; i<2; i++) {
+    		 input();
+        	 calulateAmount();
+        	 DisplayOP();
+ 		}
+    	 
+    	 
+    	 Exit ();
+    	 
+    	 
+    	 
+     }
+     
+		
+}

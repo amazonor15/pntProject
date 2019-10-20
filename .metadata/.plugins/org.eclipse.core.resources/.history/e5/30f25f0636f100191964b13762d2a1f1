@@ -1,0 +1,15 @@
+package MainFirstProject;
+
+public class Mark {
+
+	public static void main(String[] args) {
+		
+		FirstProject markcal= new FirstProject();
+		
+		
+		
+		
+		
+	}
+
+}

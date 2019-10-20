@@ -1,0 +1,33 @@
+package ConstructorDemo;
+
+public class DemoConstructor {
+
+	
+	
+	
+	
+	
+	public DemoConstructor () {
+		System.out.println("Hello");
+		
+	}
+	DemoConstructor shahid = new DemoConstructor();
+	
+	DemoConstructor Ali = new DemoConstructor (String name);
+			
+	
+			
+	DemoConstructor laptop = new DemoConstructor(String);
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+
+}

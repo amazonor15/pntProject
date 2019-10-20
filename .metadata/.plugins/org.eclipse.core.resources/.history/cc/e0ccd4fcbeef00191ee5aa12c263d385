@@ -1,0 +1,46 @@
+package practice;
+
+import java.util.Scanner;
+
+public class practice {
+
+	
+	
+	static String okay;
+	static String howareyou;
+	
+	
+	public static void input() {
+		
+		
+		System.out.println("How Are You Feeling?");
+		Scanner newscan= new Scanner(System.in);
+		howareyou=newscan.nextLine();
+		
+		
+		System.out.println("are you okay?");
+		okay=newscan.nextLine();
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		for (int i=0; i<7; i++) {
+			
+			
+			System.out.println(" Rount number: " + (i+1));
+			
+			input();
+			
+			
+			
+			
+		}
+		
+		
+
+		
+
+	}
+
+}

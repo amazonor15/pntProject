@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+public class multipleProdcuts {
+
+	
+	static  String nameOfcustomer; 
+	
+    static String nameOfProducts;
+    
+    static double quantityOfProduct; 
+    
+    static double priceOfProduct; 
+    
+    static double tax;
+    
+    static double grossPay;
+    
+    static double  discount;
+ 
+    static double netPay; 
+	
+	
+	
+    
+    public static void welcome() {
+    	
+    	System.out.println ("Welcome to Forest.com");
+    	
+    	System.out.println ("123 Abcde Street");
+    	System.out.println ("Brooklyn NY 10301");
+    	System.out.println ("");
+    	System.out.println ("        ***");
+    	
+    	
+    }
+    
+    public static void input() {
+    	
+    	
+    	Scanner scan1 = new Scanner (System.in);
+    	
+    	System.out.println (" Please Enter Your Name:");
+    	
+    	nameOfcustomer = scan1.nextLine();
+    	
+    
+    	
+    	System.out.println (" Please Enter 3 Products Name:");
+    	double p1,p2,p3;
+    	p1 = scan1.nextDouble();
+    	p2 = scan1.nextDouble();
+    	p3 = scan1.nextDouble();
+    	
+    	System.out.println (" Enter 3 Product Prices:");
+    	double pn1,pn2,pn3;
+    	pn1 = scan1.nextDouble();
+    	pn2 = scan1.nextDouble();
+    	pn3 = scan1.nextDouble();
+    	
+    	
+    	
+    	System.out.println ("");
+    	System.out.println ("");
+    	System.out.println ("");
+    	System.out.println ("");
+    	
+    	
+    	
+    	
+    }
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		welcome();
+		
+		input();
+		
+		
+		
+		
+		
+		
+	}
+
+}

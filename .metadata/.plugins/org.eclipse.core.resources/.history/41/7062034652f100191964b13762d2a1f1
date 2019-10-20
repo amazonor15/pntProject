@@ -1,0 +1,39 @@
+package MainFirstProject;
+
+import Canculator.FirstProject;
+
+public class Mark {
+
+	public static void main(String[] args) {
+		
+		FirstProject markcal= new FirstProject();
+		
+		
+		
+		markcal.welcomeCeneter();
+		
+		
+		for (int i=0; i<9; i++) {
+			
+			System.out.println("Invoice: " + (i+1));
+			
+				
+		
+			
+			markcal.input();	
+			markcal.calulateAmount();
+			markcal.DisplayOP();
+			
+		 if(!markcal.DoYouWantToContinue()) {
+			 break;
+			 
+			
+		 }
+		
+
+		
+	}
+		markcal.Exit();
+		
+}
+}

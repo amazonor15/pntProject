@@ -1,0 +1,27 @@
+package ConstructorDemo;
+
+public class DemoConstructor {
+
+	
+	
+	
+	
+	
+	public DemoConstructor () {
+		System.out.println("Hello");
+		
+	}
+	DemoConstructor shahid = new DemoConstructor();
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package practice;
+
+import java.util.Scanner;
+
+public class practice {
+
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		String howareyou;
+		System.out.println("How Are You Feeling?");
+		Scanner newscan= new Scanner(System.in);
+		howareyou=newscan.nextLine();
+		
+		
+	}
+
+}

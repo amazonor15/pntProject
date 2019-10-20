@@ -1,0 +1,40 @@
+package ConstructorDemo;
+
+
+
+public class DemoConstructor {
+
+	
+	
+	
+	
+	
+	public DemoConstructor () {  //default constructor 
+		System.out.println("Hello");
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+
+		DemoConstructor shahid = new DemoConstructor ();
+		
+		
+		Shahid ali = new Shahid("Tusher");
+		
+		System.out.println(ali.strShahid);
+			
+			
+		Shahid mahmud = new Shahid ("Tusher", 2019);
+		System.out.println(mahmud.strShahid + " " + mahmud.intId);
+		
+		
+		
+		
+	}
+
+}

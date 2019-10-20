@@ -1,0 +1,13 @@
+package ConstructorDemo;
+
+public class Shahid {
+
+	String strShahid;
+	Double dblId;
+	
+	public Shahid(String name) {
+		
+		strShahid = name;
+	}
+	
+}

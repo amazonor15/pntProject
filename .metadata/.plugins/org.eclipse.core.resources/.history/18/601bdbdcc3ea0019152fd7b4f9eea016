@@ -1,0 +1,31 @@
+
+public class Redoing {
+
+	
+	
+	
+	
+	// Variables Declarations 
+	
+     static  String nameOfBusiness;
+     static  String nameOfcustomer;
+     static String nameOfProduct;
+     static double quantityOfProduct;
+     static double priceOfProduct;
+     static double grossPay;
+     static double netPay;
+     
+     
+     
+}
+
+	public static void main(String[] args) {
+		
+		
+	
+
+		
+		
+		
+		
+}

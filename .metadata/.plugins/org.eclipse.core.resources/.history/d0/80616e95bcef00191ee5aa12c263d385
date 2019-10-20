@@ -1,0 +1,43 @@
+package practice;
+
+import java.util.Scanner;
+
+public class practice {
+
+	
+	
+	static String okay;
+	static String howareyou;
+	
+	
+	public static void input() {
+		
+		
+		System.out.println("How Are You Feeling?");
+		Scanner newscan= new Scanner(System.in);
+		howareyou=newscan.nextLine();
+		
+		
+		System.out.println("are you okay?");
+		okay=newscan.nextLine();
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		for(int i=0; i<5; i++) {
+			
+			
+			input();
+			
+			String ProceedAhead;
+			Scanner ScanName= new Scanner (System.in);
+			ProceedAhead=ScanName.nextLine();
+			System.out.println("Do You Want To Continue? Type Yes or No");
+			
+		}
+		
+
+	}
+
+}

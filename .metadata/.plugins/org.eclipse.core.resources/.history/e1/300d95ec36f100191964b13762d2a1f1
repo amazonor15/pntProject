@@ -1,0 +1,21 @@
+package MainFirstProject;
+
+import Canculator.FirstProject;
+
+public class Mark {
+
+	public static void main(String[] args) {
+		
+		FirstProject markcal= new FirstProject();
+		
+		markcal.input();
+		markcal.welcomeCeneter();
+		markcal.DisplayOP();
+		markcal.calulateAmount();
+		markcal.DisplayOP();
+		markcal.Exit();
+		
+		
+	}
+
+}

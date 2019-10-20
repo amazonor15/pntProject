@@ -1,0 +1,59 @@
+package practice;
+
+import java.util.Scanner;
+
+public class practice {
+
+	
+	
+	static String okay;
+	static String howareyou;
+	
+	
+	public static void input() {
+		
+		
+		System.out.println("How Are You Feeling?");
+		Scanner newscan= new Scanner(System.in);
+		howareyou=newscan.nextLine();
+		
+		
+		System.out.println("are you okay?");
+		okay=newscan.nextLine();
+	}
+	
+	public static void exit () {
+		
+		System.out.println("");
+		System.out.println("Thank you for spending part of you life with me. It was one of the greatest moments of my life! See you around");
+	}
+	public static void main(String[] args) {
+		
+		for (int i=0; i<7; i++) {
+			
+			
+			System.out.println(" Rount number: " + (i+1));
+			
+			input();
+			
+			
+			String goahead;
+			Scanner go=new Scanner(System.in);
+			
+			System.out.println(" proceed ? yes or no?");
+			goahead=go.nextLine();
+		
+			if (goahead.contentEquals("no")){
+				break;
+			}
+			
+			
+		}
+		exit();
+		
+
+		
+
+	}
+
+}
