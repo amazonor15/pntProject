@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class practice {
 
 	
-	
+	static String nothingJustTest;
 	//static String okay;
-	//static String howareyou;
+	//static String how are you;
 	//static String love;
 	//static String care;
 	static double workhr;
@@ -22,7 +22,7 @@ public class practice {
 		System.out.println("");
 		//System.out.println("Jamie How Are You Feeling?");
 		Scanner newscan= new Scanner(System.in);
-		//howareyou=newscan.nextLine();
+		//how are you=newscan.nextLine();
 		
 		
 		//System.out.println("Do you Love me?");
